@@ -6,9 +6,15 @@ $navbar-height: 45px;
 $navbar-default-bg: white;
 $navbar-default-brand-color: #c0392b;
 $brand-primary: #c0392b;
-$jumbotron-bg: #bdc3c7;
+$jumbotron-bg: rgb(169, 200, 231);
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
+.disabled{
+	pointer-events: none;
+	cursor: default;
+}
 .center {
 	text-align: center;
 }
@@ -17,3 +23,36 @@ $jumbotron-bg: #bdc3c7;
 	font-weight: bold;
 }
 
+.nav > li > a {
+	display: inline-block;
+	padding-left: 3px;
+}
+.panel-danger{
+	width: 400px;
+	margin: 0 auto;
+
+	.panel-title{
+		text-align: center;
+	}
+	img{
+		width: 100%;
+	}
+	.pin-delete{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.pin-edit{
+		position: relative;
+		margin-right: 5px;
+	}
+}
+
+.fa-twitter{
+	color: rgb(57,144,229);
+	&:hover{
+		color: rgb(57,144,229);
+		text-decoration: none;
+		text-shadow: 2px 7px 1px gray;
+	}
+}

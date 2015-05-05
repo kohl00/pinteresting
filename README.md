@@ -1,5 +1,1 @@
-# One Month Rails
-
-This is the pinteresting sample application for [*One Month Rails*](http://onemonthrails.com)
-
-by [Mattan Griffel]
+My take on Pinterest www.pinterest.com

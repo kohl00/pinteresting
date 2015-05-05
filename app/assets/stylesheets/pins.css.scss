@@ -1,0 +1,45 @@
+// Place all the styles related to the pins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#pins {
+	margin: 0 auto;
+
+	.box {
+		margin: 5px;
+		width: 214px;
+		border-radius: 10px;
+
+		img{
+			width: 100%;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		.panel-desc{
+			padding: 15px 5px;
+		}
+		.pin-delete{
+			text-decoration: none;
+			position: relative;
+			left: 0px;
+			top: 10px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.fa-pinterest-p{
+			  position: absolute;
+			  top: 5px;
+			  right: 5px;
+			  color: white;
+			  &.like{
+			  color: red;
+			  &:hover{
+			  	text-decoration: none;
+			  }
+			}
+		}
+	}
+}
+
+

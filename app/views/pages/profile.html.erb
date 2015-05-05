@@ -1,0 +1,26 @@
+<h2>
+	<%= apostrophe(@user) %> pins!
+</h2>
+
+<div id="pins" class="transitions-enabled col-md-12">
+  <% @pins.each do |pin| %>
+    <div class="box panel panel-default">
+      <%= link_to image_tag(pin.image.url(:medium)), pin %>
+      <div class="panel-body panel-desc">
+          <%= pin.description %> |
+          <%= pin.user.name %>
+      </div>
+    </div>
+  <% end %>
+
+  <% @likes.each do |like| %>
+    <div class="box panel panel-default">
+      <%= link_to image_tag(like.image.url(:medium)), like %>
+      <div class="panel-body panel-desc">
+          <%= like.description %> |
+          <%= like.user.name %>
+      </div>
+    </div>
+  <% end %>
+
+</div>
